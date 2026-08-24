@@ -6,6 +6,9 @@
 namespace service
 {
 
+constexpr int AndroidAutoEntity::cStartupSettleDelayMs;
+constexpr uint32_t AndroidAutoEntity::cMaxConsecutiveTransientUsbErrors;
+
 AndroidAutoEntity::AndroidAutoEntity(aasdk::io::ioService& ioService,
                                      aasdk::messenger::ICryptor::Pointer cryptor,
                                      aasdk::messenger::IMessenger::Pointer messenger,
